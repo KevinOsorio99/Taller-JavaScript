@@ -5,7 +5,8 @@ console.log("Money received per employee: " + result);
 
 //punto 2
 var b=(prompt("Name of electrician:"));
-var c=Number= 45000 * 8;
+var h=(prompt("Enter number of hours worked:"));
+var c=Number= 45000 * h;
 var d=Number= 20000;
 var result= (c-d);
 console.log("The electrician gain is:" +result);
