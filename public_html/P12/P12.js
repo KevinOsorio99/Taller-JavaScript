@@ -1,7 +1,11 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
+var aste= "     *";
+var maximo= 5;
+var x= 1;
+var z="*";
+while (x<= maximo){
+    if(x===1){
+    console.log(aste);
+}
+console.log(aste=aste.slice(1) + z);
+    x++;
+} 
