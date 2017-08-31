@@ -1,10 +1,10 @@
 var Number1=(prompt("Enter the first number:"));
 var Number2=(prompt("Enter second number:"));
 
-var result=(Number1^Number2);
+var result=(Number1**Number2);
 console.log(Number1 + (" To ") + Number2 + (" is ") + result);
 
-var result=(Number2^Number1);
+var result=(Number2**Number1);
 console.log(Number2 + (" To ") + Number1 + (" is ") + result);
 
 var result=(Number1*Number2);
