@@ -92,7 +92,7 @@ var registrypro={};
 while (men !== 0){
   men = menu();
 
-switch (men){
+switch (men){ 
   case 1:
    registryper=PersonalInformation();
     break;
