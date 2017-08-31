@@ -9,11 +9,11 @@ for (i = 1; i < NUM0; i++)
         break;
 
     }
-    ;
+    
 }
-;
+
 if (numeroPrimo)
-    console.log("The number  ${NUM0} Is cousin");
+    console.log("The number is cousin");
 else
     console.log("The number " + NUM0 + "   " + "He is not cousin");
 
