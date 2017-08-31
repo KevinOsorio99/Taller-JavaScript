@@ -1,10 +1,10 @@
 var a=Number("50");
 var b=Number("10");
 
-var result=(a^b);
+var result=(a**b);
 console.log("50 to 10 is: "+ result);
 
-var result=(b^a);
+var result=(b**a);
 console.log("10 to 50 is: "+ result);
 
 var result=(a*b);
