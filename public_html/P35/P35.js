@@ -28,16 +28,16 @@ class pan{
 var Array=[];
 var a= new pan();
 do{
-  var menu=Number(prompt(" Panaderia\n\
-1. Introduzca el producto\n\
-2. Buscar producto por nombre\n\
-3. Buscar producto por codigo\n\
-0. salir del programa"));
+  var menu=Number(prompt(" Bakery \n\
+1. Enter the product \n\
+2. Find product by name \n\
+3. Find product by code \n\
+0 exit the program"));
   
   switch (menu) {
     case 1:
-      name=(prompt("Ingrese el nombre del producto:"));
-      code=(prompt("Ingrese el codigo del producto:"));
+      name=(prompt("Enter the name of the product:"));
+      code=(prompt("Enter the product code:"));
       product={
         name,
         code
@@ -45,21 +45,21 @@ do{
       a.product=product;
       break;
     case 2:
-      var nameP = (prompt("Nombre del producto que desea buscar:"));
+      var nameP = (prompt("Name of product to be searched:"));
       var flag = false;
       for (var i = 0; i < Array.length; i++) {
         if (Array[i] === nameP) {
-          console.log("el numero " + nameP + "es la posicion " + i);
+          console.log("The number " + nameP + "is the position" + i);
           flag = true;
         }
       }
       break;
     case 3:
-      var idP = (prompt("Numero de código del producto que desea buscar:"));
+      var idP = (prompt("Product code number to search:"));
       var flag = false;
       for (var i = 0; i < Array.length; i++) {
         if (Array[i] === idP) {
-          console.log("El numero " + idP + " es la posicion " + i++);
+          console.log("The number " + idP + " is the position " + i++);
           flag = true;
         }
       }
