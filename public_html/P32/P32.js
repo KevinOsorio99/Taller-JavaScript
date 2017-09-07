@@ -41,46 +41,46 @@ class operation{
 
   var a= new operation();
   do{
-    var menu=Number(prompt("1. Realizar una suma\n\
-2. Realizar una resta\n\
-3. Realizar una multiplicacion\n\
-4. Realizar una division\n\
-0. Salir del programa"));
+    var menu=Number(prompt("1. Make a sum \n\
+2. Perform a subtraction \n\
+3. Perform a multiplication \n\
+4. Make a division \n\
+0. Quit the program"));
   switch (menu){
     case 1:
-      var num1=Number(prompt("Ingrese un numero"));
-      var num2=Number(prompt("Ingrese un numero"));
+      var num1=Number(prompt("Enter a number:"));
+      var num2=Number(prompt("Enter a number:"));
       var array=[num1,num2];
       a.array=array;
       a.sum=a.array;
-      console.log("La suma es: " + a.sum);
+      console.log("The sum is: " + a.sum);
       break;
     case 2:
-      var num3=Number(prompt("Ingrese un numero"));
-      var num4=Number(prompt("Ingrese un numero"));
+      var num3=Number(prompt("Enter a number:"));
+      var num4=Number(prompt("Enter a number:"));
       var array=[num3,num4];
       a.array=array;
       a.res=a.array;
-      console.log("La resta es: " + a.res);
+      console.log("The subtraction is: " + a.res);
       break;
     case 3:
-      var num5=Number(prompt("Ingrese un numero"));
-      var num6=Number(prompt("Ingrese un numero"));
+      var num5=Number(prompt("Enter a number:"));
+      var num6=Number(prompt("Enter a number:"));
       var array=[num5,num6];
       a.array=array;
       a.mul=a.array;
-      console.log("La multiplicacion es: " + a.mul);
+      console.log("The multiplication is: " + a.mul);
       break;
     case 4:
-      var num7=Number(prompt("Ingrese un numero"));
-      var num8=Number(prompt("Ingrese un numero"));
+      var num7=Number(prompt("Enter a number:"));
+      var num8=Number(prompt("Enter a number:"));
       var array=[num7,num8];
       a.array=array;
       a.div=a.array;
-      console.log("La division es: " + a.div);
+      console.log("The division is: " + a.div);
       break;
     case 0:
-      alert("Gracias por usar nuestro programa");
+      alert("Thank you for using our program.");
       break;
   }
   }while(menu !==0)
