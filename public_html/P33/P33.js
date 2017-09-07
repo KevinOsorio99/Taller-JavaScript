@@ -30,26 +30,26 @@ get registrypro(){
   return registrypro;
 }
 print(){
-  console.log("Informacion personal:");
-  console.log("Nombre: " + this._registryper.name);
-  console.log("Telefono: " + this._registryper.phone);
-  console.log("Direccion: " + this._registryper.addres);
-  console.log("Correo electronico: " + this._registryper.mail);
+  console.log("Personal information:");
+  console.log("Name: " + this._registryper.name);
+  console.log("Phone: " + this._registryper.phone);
+  console.log("Addres: " + this._registryper.addres);
+  console.log("E-mail: " + this._registryper.mail);
 
-  console.log("Referencia familiar:");
-  console.log("Nombre: " + this._registryfa.name);
-  console.log("Trabajo: " + this._registryfa.work);
-  console.log("Telefono: " + this._registryfa.phone);
-  console.log("Direccion: " + this._registryfa.addres);
+  console.log("Family Reference:");
+  console.log("Name: " + this._registryfa.name);
+  console.log("Work: " + this._registryfa.work);
+  console.log("Phone: " + this._registryfa.phone);
+  console.log("Addres: " + this._registryfa.addres);
 
-  console.log("Referencia laboral:");
-  console.log("Nombre: " + this._registryjob.name);
-  console.log("Trabajo: " + this._registryjob.work);
-  console.log("Telefono: " + this._registryjob.phone);
-  console.log("Direccion: " + this._registryjob.addres);
+  console.log("Work reference:");
+  console.log("Name: " + this._registryjob.name);
+  console.log("Work: " + this._registryjob.work);
+  console.log("Phone: " + this._registryjob.phone);
+  console.log("Addres: " + this._registryjob.addres);
 
-  console.log("Perfil profecional:");
-  console.log("Perfil: " + this._registrypro.profile);
+  console.log("Professional profile:");
+  console.log("Profile: " + this._registrypro.profile);
 }
 }
 
@@ -64,10 +64,10 @@ do{
 0. Quit the program "));
   switch (menu){
     case 1:
-      name=(prompt("Ingrese su nombre:"));
-      phone=Number(prompt("Ingrese su numero telefonico:"));
-      addres=(prompt("Ingrese su direccion:"));
-      mail=(prompt("Ingrese su correo electronico:"));
+      name=(prompt("Enter your name:"));
+      phone=Number(prompt("Enter your phone number:"));
+      addres=(prompt("Enter your addres:"));
+      mail=(prompt("Enter your E-mail:"));
       registryper={
         name,
         phone,
@@ -77,10 +77,10 @@ do{
       a._registryper=registryper;
       break;
     case 2:
-      name=(prompt("Ingrese su nombre:"));
-      work=(prompt("Ingrese su ocupacion:"));
-      phone=Number(prompt("Ingrese su numero telefonico:"));
-      addres=(prompt("Ingrese su direccion:"));
+      name=(prompt("Enter your name:"));
+      work=(prompt("Enter your occupation:"));
+      phone=Number(prompt("Enter your phone number:"));
+      addres=(prompt("Enter your addres:"));
       registryfa={
         name,
         work,
@@ -90,10 +90,10 @@ do{
       a.registryfa=registryfa;
       break;
     case 3:
-      name=(prompt("Ingrese su nombre:"));
-      work=(prompt("Ingrese su ocupacion:"));
-      phone=(prompt("Ingrese su numero telefonico:"));
-      addres=(prompt("Ingrese su direccion:"));
+      name=(prompt("Enter your name:"));
+      work=(prompt("Enter your occupation:"));
+      phone=(prompt("Enter your phone number:"));
+      addres=(prompt("Enter your addres:"));
       registryjob={
         name,
         work,
@@ -103,7 +103,7 @@ do{
       a.registryjob=registryjob;
       break;
     case 4:
-      profile=(prompt("Ingrese su perfil profesional:"));
+      profile=(prompt("Enter your professional profile:"));
       registrypro={
         profile
       };
@@ -113,7 +113,7 @@ do{
       a.print();
       break;
     case 0:
-      alert("Gracias por usar nuestro programa");
+      alert("Thank you for using our program.");
       break;
   }
 }while(menu !== 0)
