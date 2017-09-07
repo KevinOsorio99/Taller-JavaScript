@@ -4,7 +4,7 @@ function salve(){
   var c = $("#num").val();
   var d = $("#gender").val();
   var e = $("#live").val();
-  var print =("Hola, mi nombre es " + a + ", mi tipo de documento es " + b + ", numero de documento es " + c + ", soy de genero " + d + " vivo en cartago " + e);  
+  var print =("Hello my Name Is " + a + ", my type of document is " + b + ", document number is " + c + ", i m of gender " + d + " I live in Carthage " + e);  
   $("#text40").text(print);
 }
 
