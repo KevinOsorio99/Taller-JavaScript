@@ -54,7 +54,7 @@ do{
 
   switch (menu) {
     case 1:
-      var max=Number(prompt("Ingrese el tamaño el arreglo:"));
+      var max=Number(prompt("Enter the size of the arrangement:"));
       for (var i=0; i<max; i++){
       array.push(Math.round(Math.random()*100));
     }
@@ -63,7 +63,7 @@ do{
       break;
     
     case 2:
-   var num = Number(prompt("Número que desea buscar:"));
+   var num = Number(prompt("Number you want to search:"));
    var flag = false;
     for (var i=0;  i<max; i++) {
         if (array[i] === num) {
@@ -125,7 +125,7 @@ do{
       console.log(array);
       break;
     case 0:
-      alert("Gracias por usar nuestro programa.");
+      alert("Thank you for using our program.");
       break;
   }
 }while(menu !== 0)
