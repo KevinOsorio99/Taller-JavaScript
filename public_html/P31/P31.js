@@ -73,23 +73,23 @@ class number{
 }
 
 var array=[];
-let size=Number(prompt("Ingrese el tamaño del arreglo:"));
+let size=Number(prompt("Enter the size of the array:"));
 for (let i=0; i<size; i++){
-  array[i]=Number(prompt("Ingrese un numero:"));
+  array[i]=Number(prompt("Enter a number:"));
 }
 
 var numbers= new number();
 numbers.array=array;
 console.log(numbers.array);
 numbers.pair=numbers.array;
-console.log("Los numeros pares son: " + numbers.pair);
+console.log("The even numbers are: " + numbers.pair);
 numbers.prime=numbers.array;
-console.log("Los numeros primos son: " + numbers.prime);
+console.log("The prime numbers are: " + numbers.prime);
 numbers.sumpair=numbers.pair;
-console.log("La suma de los numeros pares es: " + numbers.sumpair);
+console.log("The sum of even numbers is: " + numbers.sumpair);
 numbers.sumprime=numbers.prime;
-console.log("La suma de los numeros primos es: " + numbers.sumprime);
+console.log("The sum of prime numbers is: " + numbers.sumprime);
 numbers.prompair=numbers.pair;
-console.log("El promedio de los numeros pares es: " + numbers.prompair);
+console.log("The average of even numbers is: " + numbers.prompair);
 numbers.promprime=numbers.prime;
-console.log("El promedio de los numeros primos es: " + numbers.promprime);
+console.log("The average prime numbers is: " + numbers.promprime);
