@@ -1,9 +1,9 @@
 function menu(){
-var option=Number(prompt(" Panaderia\n\
-1. Introduzca el producto\n\
-2. Buscar producto por nombre\n\
-3. Buscar producto por codigo\n\
-0. salir del programa"));
+var option=Number(prompt("Bakery \n\
+1. Enter the product \n\
+2. Find product by name \n\
+3. Find product by code \n\
+0 exit the program"));
   return option;
 }
 
@@ -13,8 +13,8 @@ function product(){
     codigo:""
   };
   var producto= new Array();
-  dato.nombre=(prompt("Ingrese el nombre del producto:"));
-  dato.codigo=(prompt("Ingrese el codigo del producto:"));
+  dato.nombre=(prompt("Enter the name of the product:"));
+  dato.codigo=(prompt("Enter the product code:"));
   producto.push(dato);
 
 var dato = {
@@ -27,22 +27,22 @@ var dato = {
   }
 
 function searchseq(){
-  var nameP=(prompt("Nombre del producto que desea buscar:"));
+  var nameP=(prompt("Name of product to be searched:"));
   var flag=false;
   for (var i=0; i<Array.length; i++){
     if(Array[i] === nameP){
-      console.log("el numero " + nameP + "es la posicion " + i);
+      console.log("The number " + nameP + "is the position " + i);
       flag=true;
     }
   }
 }
 
 function searchd(){
-  var idP=(prompt("Numero de código del producto que desea buscar:"));
+  var idP=(prompt("Product code number to search:"));
   var flag= false;
   for (var i=0; i<Array.length; i++){
     if (Array[i] === idP){
-      console.log("El numero " + idP + " es la posicion " + i++);
+      console.log("the number " + idP + " is the position" + i++);
       flag= true;
     }
   }
