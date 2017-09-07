@@ -1,2 +1,2 @@
-$("#text37").text("Hola, este es mi script número 37 en JavaScript usando jQuery");
+$("#text37").text("Hello, this is my number 37 script in JavaScript using jQuery");
 
