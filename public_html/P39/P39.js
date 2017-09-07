@@ -1,5 +1,5 @@
 function a(){
 var name = $("#imprimir").val();
-var print = ("Hola soy " + name + " y me siento feliz de estar aprendiendo JavaScript usando jQuery");
+var print = ("Hi I am " + name + " and I'm happy to be learning JavaScript using jQuery");
 $("#text39").val(print);
 }
