@@ -71,6 +71,7 @@ do{
           flag = true;
         }
     }
+    
      if (flag === false) {
           console.log('the numbernum ' + num + ' Not in the array');
         }
