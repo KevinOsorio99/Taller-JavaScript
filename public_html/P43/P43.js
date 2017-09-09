@@ -1,11 +1,12 @@
-var num1=Number(prompt("Ingrese un numero:"));
-var num2=Number(prompt("Ingrese un numero:"));
-
+$("#modal1").on("click",()=>{
+var x = Number($("#a").val());
+var z = Number($("#b").val());
 $("#ko").modal();
-var re = (num1 + " a la " + num2 + " es: " + (num1**num2));
-var res = (num2 + " a la " + num1 + " es: " + (num2**num1));
-var resu = ("La multiplicacion entre " + num1 + " y " + num2 + " es: " + (num1*num2));
-var resul = ("La division entre " + num1 + " y " + num2 + " es: " + (num1/num2));
-var result = ("La division entre " + num2 + " y " + num1 + " es: " + (num2/num1));
-var a = ("El modulo de la division es " + num1 + " y " + num2 + " es: " + (num1%num2));
-$("#rest").html(re + "<br>" + res + "<br>" + resu + "<br>" + resul + "<br>" + result + "<br>" + a);
+var re = (x + " a la " + z+ " es: " + (x**z));
+var res = (z + " a la " + x + " es: " + (z**x));
+var resu = ("La multiplicacion entre " + x + " y " + z + " es: " + (x*z));
+var resul = ("La division entre " + x + " y " + z + " es: " + (x/z));
+var result = ("La division entre " + z + " y " + x + " es: " + (z/x));
+var a = ("El modulo de la division es " + x + " y " + z + " es: " + (x%z));
+$("#rest").html(re + "<br>" + res + "<br>" + resu + "<br>" + resul + "<br>" + result + "<br>" + a);  
+});
