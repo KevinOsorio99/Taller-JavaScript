@@ -2,11 +2,11 @@ $("#modal1").on("click",()=>{
 var x = Number($("#a").val());
 var z = Number($("#b").val());
 $("#ko").modal();
-var re = (x + " a la " + z+ " es: " + (x**z));
-var res = (z + " a la " + x + " es: " + (z**x));
-var resu = ("La multiplicacion entre " + x + " y " + z + " es: " + (x*z));
-var resul = ("La division entre " + x + " y " + z + " es: " + (x/z));
-var result = ("La division entre " + z + " y " + x + " es: " + (z/x));
-var a = ("El modulo de la division es " + x + " y " + z + " es: " + (x%z));
+var re = (x + " To " + z+ " is: " + (x**z));
+var res = (z + " To " + x + " is: " + (z**x));
+var resu = ("The multiplication between " + x + " and " + z + " is: " + (x*z));
+var resul = ("The division between " + x + " and " + z + " is: " + (x/z));
+var result = ("The division between " + z + " and " + x + " is: " + (z/x));
+var a = ("The division module is " + x + " and " + z + " is: " + (x%z));
 $("#rest").html(re + "<br>" + res + "<br>" + resu + "<br>" + resul + "<br>" + result + "<br>" + a);  
 });
