@@ -4,8 +4,8 @@ $("#modal1").on("click",()=>{
   $("#ko").modal();
   var porcen = b / 100;
   var x = a * porcen;
-  var al = ("La retencion es: " + x);
+  var al = ("The retention is: " + x);
   var salary = a - x;
-  var ol = ("El salario total del trabajador es: " + salary);
+  var ol = ("The total salary of the worker is: " + salary);
   $("#rest").html(al + "<br>" + ol);
 });
