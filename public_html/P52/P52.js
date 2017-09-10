@@ -3,7 +3,7 @@ $("#modal1").on('click',() => {
   var b = Number($("#altu").val());
   
   $('#ko').modal();
-  var per = ("El perimetro del rectangulo es: " + (a+a+b+b));
-  var ar = ("El area del rectacgulo es: " + (a*b));
+  var per = ("The perimeter of the rectangle is: " + (a+a+b+b));
+  var ar = ("The area of ​​the rectangle is: " + (a*b));
   $("#rest").html(per + "<br>" + ar);
 });
