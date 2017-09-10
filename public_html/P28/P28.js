@@ -80,6 +80,41 @@ function insertion () {
     return array;
     }
  
+ function mixture(){
+   var tam = mix;
+   var mix;
+   const mergeSort = array;
+   if (array.length < 2){
+     return array;
+   }
+   const middle = parseInt(array.length / 2) | 0;
+   const left = array.slice(0, middle);
+   const right = array.slice(middle);
+   const merge = (left, right) => {
+     const result = [];
+     let il = ir = 0;
+     
+     while (il < left.length && ir < right.length){
+       result.push((left[il] < right[ir]) ? left[il++] : right[ir++]);
+     }
+     return [...result, ...left.slice(il), ...right.slice(ir)];
+   };
+   return mix;
+ }
+
+function selection(){
+  var tam = selec;
+  var selec;
+  for (i = 0; i < array.length; i++){
+    var i = iMin = j;
+    for (++i; i < array.length; ++i){
+      (array[i] < array[iMin]) && (iMin = i);
+    }
+    [array[j], array[iMin]] = [array[iMin], array[j]];
+  }
+  return array;
+  return selec;
+}
 
   function print() {
     console.log(array);
@@ -103,10 +138,10 @@ function insertion () {
       insertion();
       break;
       case 6:
-
+        mixture();
       break;
       case 7:
-
+        selection();
       break;
     case 8:
       print();
