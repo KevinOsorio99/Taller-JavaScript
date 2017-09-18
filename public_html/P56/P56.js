@@ -14,7 +14,7 @@ $(document).ready(() => {
     };
     if (array === null) {
       array = [
-        datos = {
+        datos ={
           salaryMin,
           salary,
           days
@@ -25,7 +25,7 @@ $(document).ready(() => {
     }
     localStorage.setItem(`datos`, JSON.stringify(array));
     var n = JSON.parse(localStorage.getItem(`datos`));
-    
+
     sessionStorage.setItem(`datos`, JSON.stringify(array));
     var z = JSON.parse(sessionStorage.getItem(`datos`));
 
@@ -44,21 +44,33 @@ $(document).ready(() => {
         var ayu = Number($("#help").val());
         var persalary = Math.round(salary * ayu);
         var salary2 = Math.round(ayu + salary);
-        $("#Text1").text("The salary is: " + salary);
-        $("#Text2").text("The help is: " + ayu);
-        $("#Text").text("Total salary: " + salary2);
+        var x=1;
+        var result = {
+          salary,
+          ayu,
+          salary2,
+          x
+        };
+        localStorage.setItem(`result`, JSON.stringify(result));
       });
-    }else {
+    } else {
       $("#ocult2").show();
       $("#cual3").click(() => {
-      if (salary >= (salaryMin * 4)){
-       var perete = Number($("#reten").val());
-       var persalary = Math.round(salary * perete);
-       var salary2 = Math.round(persalary - salary);
-      }
-      $("#as").text("The retention is: " + persalary);
-      $("#asd").text("The total salary is: " + salary2);
-    });
-  }
+        if (salary >= (salaryMin * 4)) {
+          var perete = Number($("#reten").val()/100);
+          var persalary = Math.round(salary * perete);
+          var salary2 = Math.round(salary - persalary);
+        }
+        var x=0;
+        var result = {
+          salary,
+          persalary,
+          salary2,
+          x
+        };
+        localStorage.setItem(`result`, JSON.stringify(result));
+      });
+    }
   });
+  
 });
